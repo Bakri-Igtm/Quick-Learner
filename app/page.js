@@ -3,6 +3,7 @@ import getStripe from "@/utils/get_stripe";
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import Head from "next/head";
 import { Container, AppBar, Button, Toolbar, Typography, Box, Grid } from "@mui/material";
+import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
@@ -44,6 +45,7 @@ export default function Home() {
 
       </Head>
       <SpeedInsights/>
+      <Analytics/>
 
       <AppBar position="static">
         <Toolbar>
