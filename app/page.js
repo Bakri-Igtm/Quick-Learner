@@ -3,6 +3,7 @@ import getStripe from "@/utils/get_stripe";
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import Head from "next/head";
 import { Container, AppBar, Button, Toolbar, Typography, Box, Grid } from "@mui/material";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   const handleSubmit = async () => {
@@ -42,6 +43,7 @@ export default function Home() {
         <meta name="description" content="Create flashcard from your text"/>
 
       </Head>
+      <SpeedInsights/>
 
       <AppBar position="static">
         <Toolbar>
