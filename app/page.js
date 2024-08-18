@@ -9,7 +9,7 @@ export default function Home() {
     const checkOutSession = await fetch('/api/checkout_sessions', {
       method: "POST",
       headers:{
-        origin: 'http://localhost:3001',
+        origin: 'https://quick-learner.vercel.app/',
       },
     })
 
